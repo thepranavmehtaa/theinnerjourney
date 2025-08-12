@@ -1,46 +1,121 @@
-# Getting Started with Create React App
+# The Inner Journey - Therapy Services Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive React application for "The Inner Journey" therapy services, featuring a beautiful coming soon page.
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+**The Inner Journey** is a professional therapy services company founded by **Arushi Suri**, a licensed therapist and wellness guide. This website serves as a coming soon page while the full website is under development.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Coming Soon Page**: Elegant and professional design
+- **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
+- **Modern UI**: Clean, calming aesthetic perfect for therapy services
+- **Newsletter Signup**: Email collection for launch notifications
+- **Service Preview**: Overview of upcoming therapy services
+- **Contact Information**: Easy access to therapist contact details
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Services Preview
 
-### `npm test`
+The website will offer:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Individual Therapy Sessions
+- Mindfulness & Meditation
+- Trauma-Informed Care
+- Anxiety & Depression Support
+- Personal Growth & Development
+- Holistic Wellness Approaches
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React 18 with TypeScript
+- **Styling**: CSS3 with modern features (CSS Grid, Flexbox, Gradients)
+- **Build Tool**: Create React App
+- **Responsive Design**: Mobile-first approach
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js (version 14 or higher)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```bash
+   git clone [repository-url]
+   cd theinnerjourney
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (not recommended)
+
+## Project Structure
+
+```
+src/
+├── App.tsx          # Main application component
+├── App.css          # Application styles
+├── index.tsx        # Application entry point
+└── index.css        # Global styles
+
+public/
+├── index.html       # HTML template
+├── manifest.json    # PWA manifest
+└── favicon.ico      # Website icon
+```
+
+## Design Features
+
+- **Color Scheme**: Calming blues and purples with professional grays
+- **Typography**: Clean, readable fonts with proper hierarchy
+- **Layout**: Centered card design with glassmorphism effects
+- **Animations**: Subtle hover effects and transitions
+- **Accessibility**: High contrast and readable text sizes
+
+## Future Development
+
+This coming soon page will be expanded to include:
+
+- Full website with multiple pages
+- Online booking system
+- Client portal
+- Blog/Resources section
+- Therapist profiles
+- Service details and pricing
+
+## Contact
+
+For inquiries about therapy services:
+
+- **Email**: arushi@theinnerjourney.com
+- **Company**: The Inner Journey
+- **Therapist**: Arushi Suri
+
+## License
+
+This project is proprietary and confidential. All rights reserved.
+
+---
+
+_Built with ❤️ for The Inner Journey_

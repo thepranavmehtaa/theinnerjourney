@@ -1,38 +1,276 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
 .App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.coming-soon-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Logo section */
+.logo {
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.company-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Main content */
+.main-content {
+  margin-bottom: 2rem;
+}
+
+.coming-soon-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #718096;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Therapist info */
+.therapist-info {
+  background: linear-gradient(135deg, #f7fafc, #edf2f7);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #667eea;
+}
+
+.therapist-name {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.therapist-title {
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+/* Services preview */
+.services-preview {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.services-preview h4 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.services-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.8rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.services-list li {
+  background: #f7fafc;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  color: #4a5568;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.services-list li::before {
+  content: "✨";
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Contact info */
+.contact-info {
+  background: #edf2f7;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.email {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+/* Newsletter signup */
+.newsletter-signup {
+  margin-bottom: 2rem;
+}
+
+.newsletter-signup h4 {
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.newsletter-signup p {
+  color: #718096;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.email-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: #667eea;
+}
+
+.signup-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.signup-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Footer */
+.footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .coming-soon-container {
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .company-name {
+    font-size: 2rem;
+  }
+
+  .coming-soon-title {
+    font-size: 2.5rem;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-input {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .company-name {
+    font-size: 1.8rem;
+  }
+
+  .coming-soon-title {
+    font-size: 2rem;
+  }
+
+  .therapist-name {
+    font-size: 1.5rem;
   }
 }
