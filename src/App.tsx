@@ -36,7 +36,7 @@ function App() {
 
             <div className="contact-info">
               <p>For inquiries and appointments, please contact:</p>
-              <p className="email">arushisuri@theinnerjourney.com</p>
+              <p className="email">arushisuri@theinnerjourney.in</p>
             </div>
 
             {/* <div className="newsletter-signup">
